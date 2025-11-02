@@ -1,0 +1,20 @@
+User-agent: *
+# Application
+Disallow: /vendor/
+Disallow: /src/
+Disallow: /tests/
+Disallow: /private/
+Disallow: /logs/
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /.git/
+Disallow: /.env
+
+# Public
+Disallow: /admin/
+Disallow: /user/
+Disallow: /asset/
+Allow: /asset/image/
+
+# (Optional) Sitemap if you have one
+# Sitemap: https://example.com/sitemap.xml

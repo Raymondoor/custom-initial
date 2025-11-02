@@ -1,0 +1,40 @@
+# --------------------------------------
+# Environment files
+# --------------------------------------
+# Ignore the real .env with secrets
+.env
+.env.local
+.env.*.local
+
+# Keep a sample file in the repo
+!.env.sample
+
+# --------------------------------------
+# Composer & dependencies
+# --------------------------------------
+vendor/
+
+# --------------------------------------
+# IDEs / OS files
+# --------------------------------------
+# JetBrains IDEs
+.idea/
+# VSCode
+.vscode/
+# MacOS
+.DS_Store
+# Windows
+Thumbs.db
+desktop.ini
+
+# --------------------------------------
+# Logs, cache, temp
+# --------------------------------------
+log/
+cache/
+tmp/
+
+# --------------------------------------
+# Other
+# --------------------------------------
+.notes

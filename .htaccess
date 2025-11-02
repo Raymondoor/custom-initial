@@ -1,0 +1,46 @@
+# =========================================================
+#  Secure .htaccess for Composer-based PHP project
+#  (No mod_rewrite, single-directory environment)
+# =========================================================
+
+# ---------------------------------------------------------
+# 1. Deny access to sensitive files and directories
+# ---------------------------------------------------------
+
+# Deny access to entire directories
+RedirectMatch 403 ^/(vendor|src|tests|logs|private|app)(/|$)
+
+# Deny access to hidden files (like .git, .env)
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Deny access to composer and config files
+<FilesMatch "(composer\.(json|lock)|package\.json|yarn\.lock|phpunit\.xml|README\.md|LICENSE)$">
+    Require all denied
+</FilesMatch>
+
+# ---------------------------------------------------------
+# 2. Optional custom error pages
+# ---------------------------------------------------------
+ErrorDocument 403 /errors/403.php
+ErrorDocument 404 /errors/404.php
+
+# ---------------------------------------------------------
+# 3. Basic security headers
+# ---------------------------------------------------------
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# ---------------------------------------------------------
+# 4. (Optional) MIME and caching controls
+# ---------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/* "access plus 3 months"
+</IfModule>

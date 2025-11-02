@@ -1,0 +1,1 @@
+composer create-project raymondoor/custom-initial myproject
