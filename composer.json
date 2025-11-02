@@ -2,7 +2,7 @@
     "name":"raymondoor/custom-initial",
     "description":"A modular php-httpd application with conventional file system routing",
     "type":"project",
-    "license":"GPL-3",
+    "license":"GPL-3.0-or-later",
     "authors":[
         {
             "name":"Raymondoor",
