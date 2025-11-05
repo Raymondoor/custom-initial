@@ -11,9 +11,11 @@ class App{
         date_default_timezone_set('Asia/Tokyo');
 
         // pretty error
-        $whoops = new \Whoops\Run;
-        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
-        $whoops->register();
+        if((bool)($_ENV['DEBUG'])){
+            $whoops = new \Whoops\Run;
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+            $whoops->register();
+        }
 
         // content type
         self::contentType();
