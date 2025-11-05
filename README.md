@@ -7,8 +7,10 @@
 
 
 ## License
-"symfony/var-dumper":"^7.3.5",
-"symfony/dotenv":"^7.3.2",
-"ezyang/htmlpurifier":"^4.19",
-"picocss/pico":"^2.1",
-"fortawesome/font-awesome":"7.1.0"
+"symfony/var-dumper":"^7.3.5",<br>
+"symfony/dotenv":"^7.3.2",<br>
+"ezyang/htmlpurifier":"^4.19",<br>
+"laminas/laminas-escaper": "^2.18",<br>
+"filp/whoops": "^2.18",<br>
+"monolog/monolog": "^3.9",<br>
+"raymondoor/dbconnection": "^1.0"
