@@ -14,11 +14,13 @@
         "symfony/var-dumper":"^7.3.5",
         "symfony/dotenv":"^7.3.2",
         "ezyang/htmlpurifier":"^4.19",
-        "picocss/pico":"^2.1",
-        "fortawesome/font-awesome":"7.1.0"
+        "laminas/laminas-escaper": "^2.18",
+        "filp/whoops": "^2.18",
+        "monolog/monolog": "^3.9"
     },
     "autoload":{
         "psr-4":{
+            "Raymondoor\\View\\":"app/view/"
         },
         "files":[
             "app/function/init.php",

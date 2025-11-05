@@ -6,17 +6,32 @@ class App{
         'INDEX' => 'index',
         'ALIAS' => 'Index'
     ];
+    public static function init(array $val = []):array{
+        // ini stuff
+        date_default_timezone_set('Asia/Tokyo');
+
+        // pretty error
+        $whoops = new \Whoops\Run;
+        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+        $whoops->register();
+
+        // content type
+        self::contentType();
+
+        // init page
+        if(!empty($val)){
+            return self::set($val);
+        }
+        return self::$PAGE;
+    }
     public static function set(array $val):array{
         self::$PAGE =  array_merge(self::$PAGE, $val);
         return self::$PAGE;
     }
-    public static function get(string $key){
+    public static function get(string $key):mixed{
         return self::$PAGE[$key];
     }
-    public static function csrf(){
-        if(!isset($_SESSION[APP_NAME]['csrf'])){
-            $_SESSION[APP_NAME]['csrf'] = bin2hex(random_bytes(32));
-            return;
-        }
+    public static function contentType($type='text/html', $charset='UTF-8'):void{
+        header('Content-Type: '.$type.'; charset='.$charset);
     }
 }

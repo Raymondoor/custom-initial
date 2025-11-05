@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a0614529cce6aac8dfadaf381dafeef",
+    "content-hash": "f2dffb24dbe3c8a0086ae7e3ca5c3def",
     "packages": [
         {
             "name": "ezyang/htmlpurifier",
@@ -68,97 +68,289 @@
             "time": "2025-10-17T16:34:55+00:00"
         },
         {
-            "name": "fortawesome/font-awesome",
-            "version": "7.1.0",
+            "name": "filp/whoops",
+            "version": "2.18.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "41cfe644047fc3a4c49c22acc721cacc3e1021fe"
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "d2102955e48b9fd9ab24280a7ad12ed552752c4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41cfe644047fc3a4c49c22acc721cacc3e1021fe",
-                "reference": "41cfe644047fc3a4c49c22acc721cacc3e1021fe",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/d2102955e48b9fd9ab24280a7ad12ed552752c4d",
+                "reference": "d2102955e48b9fd9ab24280a7ad12ed552752c4d",
                 "shasum": ""
             },
+            "require": {
+                "php": "^7.1 || ^8.0",
+                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.8 || ^9.3.3",
+                "symfony/var-dumper": "^4.0 || ^5.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
+                "whoops/soap": "Formats errors as SOAP responses"
+            },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "CC-BY-4.0",
-                "OFL-1.1",
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "The Font Awesome Team",
-                    "homepage": "https://github.com/orgs/FortAwesome/people"
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
                 }
-            ],
-            "description": "The iconic font, CSS, and SVG framework",
-            "homepage": "https://fontawesome.com",
-            "keywords": [
-                "FontAwesome",
-                "awesome",
-                "bootstrap",
-                "font",
-                "icon",
-                "svg"
-            ],
-            "support": {
-                "docs": "http://fontawesome.com/docs",
-                "email": "hello@fontawesome.com",
-                "issues": "https://github.com/FortAwesome/Font-Awesome/issues",
-                "source": "https://github.com/FortAwesome/Font-Awesome"
             },
-            "time": "2025-10-01T19:14:40+00:00"
-        },
-        {
-            "name": "picocss/pico",
-            "version": "v2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/picocss/pico.git",
-                "reference": "1039a4788d6abc368d5485ae6bac84a8f0e3096f"
+            "autoload": {
+                "psr-4": {
+                    "Whoops\\": "src/Whoops/"
+                }
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/picocss/pico/zipball/1039a4788d6abc368d5485ae6bac84a8f0e3096f",
-                "reference": "1039a4788d6abc368d5485ae6bac84a8f0e3096f",
-                "shasum": ""
-            },
-            "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Lucas Larroche",
-                    "email": "lucas@larroche.com",
-                    "homepage": "https://lucaslarroche.com",
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
                     "role": "Developer"
                 }
             ],
-            "description": "Minimal CSS Framework for semantic HTML.",
-            "homepage": "https://picocss.com",
+            "description": "php error handling for cool kids",
+            "homepage": "https://filp.github.io/whoops/",
             "keywords": [
-                "CSS-Framework",
-                "css",
-                "dark-mode",
-                "dark-theme",
-                "lightweight",
-                "minimal",
-                "minimalist",
-                "minimalistic",
-                "native-html",
-                "scss-framework",
-                "semantic"
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "throwable",
+                "whoops"
             ],
             "support": {
-                "issues": "https://github.com/picocss/pico/issues/",
-                "source": "https://github.com/picocss/pico/tree/v2.1.1"
+                "issues": "https://github.com/filp/whoops/issues",
+                "source": "https://github.com/filp/whoops/tree/2.18.4"
             },
-            "time": "2025-03-15T06:44:28+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/denis-sokolov",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-08-08T12:00:00+00:00"
+        },
+        {
+            "name": "laminas/laminas-escaper",
+            "version": "2.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-escaper.git",
+                "reference": "06f211dfffff18d91844c1f55250d5d13c007e18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/06f211dfffff18d91844c1f55250d5d13c007e18",
+                "reference": "06f211dfffff18d91844c1f55250d5d13c007e18",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-mbstring": "*",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
+            },
+            "conflict": {
+                "zendframework/zend-escaper": "*"
+            },
+            "require-dev": {
+                "infection/infection": "^0.31.0",
+                "laminas/laminas-coding-standard": "~3.1.0",
+                "phpunit/phpunit": "^11.5.42",
+                "psalm/plugin-phpunit": "^0.19.5",
+                "vimeo/psalm": "^6.13.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Escaper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Securely and safely escape HTML, HTML attributes, JavaScript, CSS, and URLs",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "escaper",
+                "laminas"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-escaper/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-escaper/issues",
+                "rss": "https://github.com/laminas/laminas-escaper/releases.atom",
+                "source": "https://github.com/laminas/laminas-escaper"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2025-10-14T18:31:13+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "3.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "10d85740180ecba7896c87e06a166e0c95a0e3b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/10d85740180ecba7896c87e06a166e0c95a0e3b6",
+                "reference": "10d85740180ecba7896c87e06a166e0c95a0e3b6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "psr/log": "^2.0 || ^3.0"
+            },
+            "provide": {
+                "psr/log-implementation": "3.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "elasticsearch/elasticsearch": "^7 || ^8",
+                "ext-json": "*",
+                "graylog2/gelf-php": "^1.4.2 || ^2.0",
+                "guzzlehttp/guzzle": "^7.4.5",
+                "guzzlehttp/psr7": "^2.2",
+                "mongodb/mongodb": "^1.8",
+                "php-amqplib/php-amqplib": "~2.4 || ^3",
+                "php-console/php-console": "^3.1.8",
+                "phpstan/phpstan": "^2",
+                "phpstan/phpstan-deprecation-rules": "^2",
+                "phpstan/phpstan-strict-rules": "^2",
+                "phpunit/phpunit": "^10.5.17 || ^11.0.7",
+                "predis/predis": "^1.1 || ^2",
+                "rollbar/rollbar": "^4.0",
+                "ruflin/elastica": "^7 || ^8",
+                "symfony/mailer": "^5.4 || ^6",
+                "symfony/mime": "^5.4 || ^6"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-curl": "Required to send log messages using the IFTTTHandler, the LogglyHandler, the SendGridHandler, the SlackWebhookHandler or the TelegramBotHandler",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
+                "ext-openssl": "Required to send log messages using SSL",
+                "ext-sockets": "Allow sending log messages to a Syslog server (via UDP driver)",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "https://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "https://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "support": {
+                "issues": "https://github.com/Seldaek/monolog/issues",
+                "source": "https://github.com/Seldaek/monolog/tree/3.9.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Seldaek",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-03-24T10:02:05+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.2"
+            },
+            "time": "2024-09-11T13:17:53+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

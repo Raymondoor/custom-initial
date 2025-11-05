@@ -17,7 +17,8 @@ const HOME_PATH = '/php_custom_initial'; // Leave blank if host is the root poin
 define('HOME_URL', (isset($_SERVER['HTTPS'])?'https://':'http://').$_SERVER['SERVER_NAME'].HOME_PATH);
 define('CURRENT_URL', (isset($_SERVER['HTTPS'])?'https://':'http://').$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);
 define('ASSET_URL',HOME_URL.'/asset');
-define('IMAGE_URL',ASSET_URL.'/image');
+define('IMAGE_URL',ASSET_URL.'/img');
+define('LIB_URL',ASSET_URL.'/lib');
 define('STYLE_URL',ASSET_URL.'/style');
 define('SCRIPT_URL',ASSET_URL.'/script');
 
@@ -28,7 +29,7 @@ define('IPV4_RANGE', $_ENV['IPV4_ALLOW']); // set your own
 define('IPV6_RANGE', $_ENV['IPV6_ALLOW']);
 
 
-date_default_timezone_set('Asia/Tokyo');
+
 if((bool)($_ENV['DEBUG'])){
     ini_set('display_errors', '1');
     ini_set('display_startup_errors', 1);
