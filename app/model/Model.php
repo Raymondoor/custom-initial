@@ -13,13 +13,13 @@ class Model extends DBoperation{
             parent::create_time_record()
         );
         if($res < 0){
-            throw new \Exception('Failed to make table');
+            throw new \Exception('Failed to make "'.self::TABLE.'" table');
         }
     }
     public static function drop(){
         $res = parent::dropTableIfIs(self::TABLE);
         if($res < 0){
-            throw new \Exception('Failed to drop  table');
+            throw new \Exception('Failed to drop "'.self::TABLE.'" table');
         }
     }
 }
