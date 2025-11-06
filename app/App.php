@@ -17,6 +17,9 @@ class App{
             $whoops->register();
         }
 
+        // DB
+        \Raymondoor\DBconnection::init('sqlite:'.DATA_DIR.'/database.db');
+
         // content type
         self::contentType();
 

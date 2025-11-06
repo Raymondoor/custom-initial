@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1cce431887b61baf380ddc953badc974",
+    "content-hash": "9aed71b8f8edb87c004071f8735f0f7d",
     "packages": [
         {
             "name": "ezyang/htmlpurifier",
@@ -354,16 +354,16 @@
         },
         {
             "name": "raymondoor/dbconnection",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Raymondoor/DBconnection.git",
-                "reference": "e27e25e54b2514baf3c55ad4723b16fd7b7c7b2b"
+                "reference": "48543c4573aa4bbd8d3962ebd3ffeafc0b72dd13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Raymondoor/DBconnection/zipball/e27e25e54b2514baf3c55ad4723b16fd7b7c7b2b",
-                "reference": "e27e25e54b2514baf3c55ad4723b16fd7b7c7b2b",
+                "url": "https://api.github.com/repos/Raymondoor/DBconnection/zipball/48543c4573aa4bbd8d3962ebd3ffeafc0b72dd13",
+                "reference": "48543c4573aa4bbd8d3962ebd3ffeafc0b72dd13",
                 "shasum": ""
             },
             "require": {
@@ -372,7 +372,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "raymondoor\\": ""
+                    "Raymondoor\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -388,9 +388,9 @@
             "description": "Simple custom class to handle database operations using PDO",
             "support": {
                 "issues": "https://github.com/Raymondoor/DBconnection/issues",
-                "source": "https://github.com/Raymondoor/DBconnection/tree/v1.0.0"
+                "source": "https://github.com/Raymondoor/DBconnection/tree/v1.1.0"
             },
-            "time": "2025-11-05T16:03:20+00:00"
+            "time": "2025-11-05T16:42:37+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

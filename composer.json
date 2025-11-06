@@ -17,11 +17,12 @@
         "laminas/laminas-escaper": "^2.18",
         "filp/whoops": "^2.18",
         "monolog/monolog": "^3.9",
-        "raymondoor/dbconnection": "^1.0"
+        "raymondoor/dbconnection": "^1.1"
     },
     "autoload":{
         "psr-4":{
-            "Raymondoor\\View\\":"app/view/"
+            "Raymondoor\\View\\":"app/view/",
+            "Raymondoor\\Model\\":"app/model/"
         },
         "files":[
             "app/function/init.php",
